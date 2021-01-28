@@ -1,0 +1,35 @@
+@mixin for-size($size) {
+  @if $size == iphone5-6 {
+    @media only screen and (min-device-width: 20em) and (max-device-width: 23.4375em) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $size == phone-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablets {
+    @media (max-device-width: 768px) {
+      @content;
+    }
+  } @else if $size == tablet-only {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}

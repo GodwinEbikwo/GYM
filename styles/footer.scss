@@ -1,0 +1,52 @@
+.footer {
+  background-color: $purple;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .f-grid {
+    @include for-size(tablet-landscape-up) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1em;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-family: "Modern";
+      letter-spacing: -0.015em;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1;
+    }
+
+    .link {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $offWhite;
+      transition: all 200ms linear;
+      cursor: pointer;
+      letter-spacing: $letterSpacing;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .f-left {
+      padding: 1rem 0;
+    }
+
+    .f-middle {
+      padding: 1rem 0;
+    }
+
+    .f-right {
+      padding: 1rem 0;
+    }
+  }
+}
