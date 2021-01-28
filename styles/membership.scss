@@ -45,8 +45,7 @@
           font-size: clamp(2rem, 3vw, 5rem);
           text-transform: capitalize;
           font-weight: 600;
-          letter-spacing: -0.015em;
-          font-family: "Modern";
+          letter-spacing: $letterSpacing;
           color: $realWhite;
         }
       }
