@@ -1,29 +1,14 @@
 .banner {
   height: 45px;
   width: 100%;
-  background: #161615;
+  background: $purple;
   text-align: center;
   padding: 1rem;
   text-transform: uppercase;
-  p {
-    font-size: clamp(0.8rem, 1.25vw, 3rem);
-    @include for-size(iphone5-6) {
-      font-size: 0.6rem;
-    }
-    background: linear-gradient(
-      75deg,
-      rgb(137, 131, 186),
-      rgb(158, 152, 204) 20%,
-      rgb(194, 154, 190) 38%,
-      rgb(225, 151, 176) 56%,
-      rgb(255, 154, 125) 74%,
-      rgb(255, 180, 103) 84%,
-      rgb(255, 218, 142)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  span {
+    font-size: clamp(0.85rem, 1.25vw, 3rem);
+    text-transform: uppercase;
+    color: $white;
     font-weight: 500;
-    letter-spacing: $letterSpacing;
   }
 }

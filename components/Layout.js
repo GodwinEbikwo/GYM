@@ -2,7 +2,6 @@
 /* eslint-disable react/prop-types */
 import Head from "next/head";
 import styles from "./layout.module.css";
-import NavBar from "./nav/NavBar";
 
 const previewImage = "";
 export const siteTitle = "Freelancer starter";
@@ -21,7 +20,6 @@ export default function Layout({ children, description }) {
         <meta property="og:url" content={url} key="ogurl" />
         <meta property="og:description" content={description} key="ogdesc" />
       </Head>
-      <NavBar />
       <div className={styles.main}>{children}</div>
     </div>
   );

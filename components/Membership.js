@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Membership() {
   return (
@@ -39,12 +39,11 @@ function Mcard({ title, perks, perksTwo, perksThree, price }) {
   return (
     <div className="m-card">
       <div className="m-title">
-        <img
+        <Image
           src="/dumbbell.svg"
-          // width={44}
-          // height={44}
+          width={44}
+          height={44}
           alt="started dumbell images"
-          className="icon"
         />
         <div style={{ marginBottom: "1rem", marginTop: "1rem" }}>
           <h4>

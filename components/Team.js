@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Team() {
   return (
@@ -26,10 +26,10 @@ export default function Team() {
           </div>
 
           <div className="team__card">
-            <img
+            <Image
               src="/02.jpg"
-              // width={1920}
-              // height={2880}
+              width={1920}
+              height={2880}
               alt="images of trainer"
               className="team__img"
             />
@@ -37,11 +37,11 @@ export default function Team() {
           </div>
 
           <div className="team__card">
-            <img
+            <Image
               loading="lazy"
               src="/services.jpg"
-              // width={1920}
-              // height={2880}
+              width={1920}
+              height={2880}
               alt="images of trainer"
               className="team__img"
             />
@@ -49,11 +49,11 @@ export default function Team() {
           </div>
 
           <div className="team__card">
-            <img
+            <Image
               loading="lazy"
               src="/03.jpg"
-              // width={1920}
-              // height={2880}
+              width={1920}
+              height={2880}
               alt="images of trainer"
               className="team__img"
             />
@@ -61,11 +61,11 @@ export default function Team() {
           </div>
 
           <div className="team__card">
-            <img
+            <Image
               loading="lazy"
               src="/04.jpg"
-              // width={1920}
-              // height={2880}
+              width={1920}
+              height={2880}
               alt="images of trainer"
               className="team__img"
             />

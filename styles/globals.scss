@@ -103,13 +103,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
 input[type="email"],
 input[type="text"] {
   appearance: none;
@@ -174,8 +167,7 @@ h1 {
   margin-bottom: 1.2rem;
   line-height: 1;
   font-size: clamp(2rem, 5vw, 8rem);
-  letter-spacing: -0.015em;
-  font-family: "Modern", "Inter", sans-serif;
+  letter-spacing: $letterSpacing;
 }
 
 h2 {

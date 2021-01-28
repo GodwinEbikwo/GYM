@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -26,10 +26,10 @@ export default function Services() {
           </div>
 
           <div className="service-img">
-            <img
+            <Image
               src="/hero.jpg"
-              // width={640}
-              // height={426}
+              width={640}
+              height={426}
               alt="services images"
             />
           </div>
